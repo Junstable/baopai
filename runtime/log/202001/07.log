@@ -1,0 +1,324 @@
+[2020-01-07T16:53:06+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\login\index.php [ array (
+) ]
+[2020-01-07T16:53:42+08:00][sql] CONNECT:[ UseTime:2.031994s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:53:42+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.023521s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002187s ]
+[2020-01-07T16:53:42+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.021093s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004804s ]
+[2020-01-07T16:53:42+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.020485s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.002215s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT * FROM `db_system_menus` WHERE  `is_show` = 1  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.005273s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002530s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT `menu_name`,`value` FROM `db_system_config` [ RunTime:0.001987s ]
+[2020-01-07T16:53:42+08:00][sql] SHOW FULL COLUMNS FROM `db_system_role` [ RunTime:0.020199s ]
+[2020-01-07T16:53:42+08:00][sql] SELECT `role_name` FROM `db_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001774s ]
+[2020-01-07T16:53:42+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\index\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+) ]
+[2020-01-07T16:53:51+08:00][sql] CONNECT:[ UseTime:2.026048s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.021111s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002598s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.018966s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.003853s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_store_order` [ RunTime:0.021885s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `paid` = 1  AND `status` = 0  AND `shipping_type` = 1  AND `refund_status` = 0  AND `is_del` = 0 [ RunTime:0.003702s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.020951s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'store_stock' LIMIT 1 [ RunTime:0.002577s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'store_stock' LIMIT 1 [ RunTime:0.002443s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.022758s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `stock` <= 2  AND `is_show` = 1  AND `is_del` = 0 [ RunTime:0.002586s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product_reply` [ RunTime:0.020581s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product_reply` WHERE  `is_reply` = 0 [ RunTime:0.001723s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_user_extract` [ RunTime:0.018596s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_user_extract` WHERE  `status` = 0 [ RunTime:0.001599s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT `id`,`order_id` FROM `db_store_order` WHERE  `paid` = 1  AND `status` = 0  AND `shipping_type` = 1  AND `refund_status` = 0  AND `is_del` = 0  AND `is_remind` = 0 [ RunTime:0.002991s ]
+[2020-01-07T16:53:51+08:00][sql] CONNECT:[ UseTime:2.006582s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.017989s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002053s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.021011s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.003733s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_store_order` [ RunTime:0.021884s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `status` = 0  AND `paid` = 1  AND `refund_status` = 0 [ RunTime:0.002947s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `paid` = 1  AND `refund_status` = 1 [ RunTime:0.002061s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.019689s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'store_stock' LIMIT 1 [ RunTime:0.002466s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'store_stock' LIMIT 1 [ RunTime:0.002719s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.022530s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `stock` <= 2  AND `is_show` = 1  AND `is_del` = 0 [ RunTime:0.002653s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_user_extract` [ RunTime:0.020694s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_user_extract` WHERE  `status` = 0 [ RunTime:0.001804s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `paid` = 1  AND `pay_time` BETWEEN 1578240000 AND 1578326399 [ RunTime:0.003806s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `paid` = 1  AND `pay_time` > 1578240000  AND `pay_time` < 1578326400 [ RunTime:0.002458s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `db_store_order` WHERE  `paid` = 1  AND `pay_time` BETWEEN 1578240000 AND 1578326399 [ RunTime:0.002356s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `db_store_order` WHERE  `paid` = 1  AND `pay_time` > 1578153600  AND `pay_time` < 1578240000 [ RunTime:0.002564s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `db_store_order` WHERE  `paid` = 1  AND `pay_time` BETWEEN 1577808000 AND 1580486399 [ RunTime:0.002491s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT sum(pay_price) FROM `db_store_order` WHERE  `paid` = 1  AND `pay_time` > 1575129600  AND `pay_time` < 1577808000 LIMIT 1 [ RunTime:0.002352s ]
+[2020-01-07T16:53:51+08:00][sql] SHOW FULL COLUMNS FROM `db_user` [ RunTime:0.018012s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_user` WHERE  `add_time` > 1578326400 [ RunTime:0.001929s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_user` WHERE  `add_time` > 1578240000  AND `add_time` < 1578326400 [ RunTime:0.003219s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_user` WHERE  `add_time` > 1577808000 [ RunTime:0.001803s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_user` WHERE  `add_time` > 1575129600  AND `add_time` < 1577808000 [ RunTime:0.002341s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `add_time` > 1577808000 [ RunTime:0.001735s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `add_time` > 1575129600  AND `add_time` < 1577808000 [ RunTime:0.002212s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `add_time` > 1575129600  AND `add_time` < 1577808000 [ RunTime:0.001708s ]
+[2020-01-07T16:53:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_order` WHERE  `add_time` > 1572537600  AND `add_time` < 1575129600 [ RunTime:0.001929s ]
+[2020-01-07T16:53:51+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\index\main.php [ array (
+  0 => '_admin',
+  1 => 'first_line',
+  2 => 'second_line',
+  3 => 'topData',
+) ]
+[2020-01-07T16:53:58+08:00][sql] CONNECT:[ UseTime:2.025125s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:53:58+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.027513s ]
+[2020-01-07T16:53:58+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002287s ]
+[2020-01-07T16:53:58+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.026663s ]
+[2020-01-07T16:53:58+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.003625s ]
+[2020-01-07T16:53:58+08:00][sql] SHOW FULL COLUMNS FROM `db_user` [ RunTime:0.020474s ]
+[2020-01-07T16:53:58+08:00][sql] SELECT FROM_UNIXTIME(add_time,'%m-%e') as day,count(*) as count FROM `db_user` WHERE  `add_time` BETWEEN 1575734400 AND 1578326400 GROUP BY FROM_UNIXTIME(add_time,'%Y%m%e') ORDER BY `add_time` ASC [ RunTime:0.002440s ]
+[2020-01-07T16:53:58+08:00][sql] CONNECT:[ UseTime:2.025884s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:53:58+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.028849s ]
+[2020-01-07T16:53:58+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002984s ]
+[2020-01-07T16:53:58+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.022848s ]
+[2020-01-07T16:53:58+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004120s ]
+[2020-01-07T16:53:58+08:00][sql] SHOW FULL COLUMNS FROM `db_store_order` [ RunTime:0.018807s ]
+[2020-01-07T16:53:58+08:00][sql] SELECT FROM_UNIXTIME(add_time,'%m-%d') as day,count(*) as count,sum(pay_price) as price FROM `db_store_order` WHERE  `add_time` BETWEEN 1575734400 AND 1578326400 GROUP BY FROM_UNIXTIME(add_time,'%Y%m%d') ORDER BY `add_time` ASC [ RunTime:0.002591s ]
+[2020-01-07T16:54:53+08:00][sql] CONNECT:[ UseTime:2.026147s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:54:53+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.019687s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001985s ]
+[2020-01-07T16:54:53+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.017924s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.003852s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003883s ]
+[2020-01-07T16:54:53+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.017647s ]
+[2020-01-07T16:54:53+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387292 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.003261s ]
+[2020-01-07T16:54:53+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.015716s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001513s ]
+[2020-01-07T16:54:53+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.016896s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002069s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.001942s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.001704s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.003532s ]
+[2020-01-07T16:54:53+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.016319s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002174s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.003501s ]
+[2020-01-07T16:54:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.001789s ]
+[2020-01-07T16:54:53+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:54:59+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\public\index.html [ array (
+) ]
+[2020-01-07T16:54:59+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\public\index.html [ array (
+) ]
+[2020-01-07T16:55:01+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\public\index.html [ array (
+) ]
+[2020-01-07T16:55:02+08:00][sql] CONNECT:[ UseTime:2.019180s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:02+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.024551s ]
+[2020-01-07T16:55:02+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002198s ]
+[2020-01-07T16:55:02+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.021147s ]
+[2020-01-07T16:55:02+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004872s ]
+[2020-01-07T16:55:02+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreCategory'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003458s ]
+[2020-01-07T16:55:02+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.017577s ]
+[2020-01-07T16:55:02+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387302 , `admin_name` = 'admin' , `path` = 'admin/store.storecategory/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.003310s ]
+[2020-01-07T16:55:02+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.016086s ]
+[2020-01-07T16:55:02+08:00][sql] SELECT * FROM `db_store_category` WHERE  `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001851s ]
+[2020-01-07T16:55:02+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_category\index.php [ array (
+  0 => '_admin',
+  1 => 'pid',
+  2 => 'cate',
+) ]
+[2020-01-07T16:55:04+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\public\index.html [ array (
+) ]
+[2020-01-07T16:55:15+08:00][sql] CONNECT:[ UseTime:2.006650s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:15+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.018204s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001911s ]
+[2020-01-07T16:55:15+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.018437s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004256s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003827s ]
+[2020-01-07T16:55:15+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.017880s ]
+[2020-01-07T16:55:15+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387314 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.004242s ]
+[2020-01-07T16:55:15+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.017201s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001705s ]
+[2020-01-07T16:55:15+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.018206s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002688s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.002123s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.001818s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.003407s ]
+[2020-01-07T16:55:15+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.024670s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002284s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.003330s ]
+[2020-01-07T16:55:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.002128s ]
+[2020-01-07T16:55:15+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:55:19+08:00][sql] CONNECT:[ UseTime:2.028131s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:19+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.019433s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002086s ]
+[2020-01-07T16:55:19+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.016367s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004282s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003821s ]
+[2020-01-07T16:55:19+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.020516s ]
+[2020-01-07T16:55:19+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387318 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.004622s ]
+[2020-01-07T16:55:19+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.022473s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001671s ]
+[2020-01-07T16:55:19+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.021338s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002623s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.002357s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.001821s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.004060s ]
+[2020-01-07T16:55:19+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.020697s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002364s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.003204s ]
+[2020-01-07T16:55:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.002129s ]
+[2020-01-07T16:55:19+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:55:20+08:00][sql] CONNECT:[ UseTime:2.008396s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:20+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.026151s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002099s ]
+[2020-01-07T16:55:20+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.019910s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004918s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003703s ]
+[2020-01-07T16:55:20+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.017555s ]
+[2020-01-07T16:55:20+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387318 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.004342s ]
+[2020-01-07T16:55:20+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.025282s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001562s ]
+[2020-01-07T16:55:20+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.023229s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002186s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.002508s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.002215s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.004601s ]
+[2020-01-07T16:55:20+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.028847s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002818s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.003170s ]
+[2020-01-07T16:55:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.002454s ]
+[2020-01-07T16:55:20+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:55:21+08:00][sql] CONNECT:[ UseTime:2.024711s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:21+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.019379s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002140s ]
+[2020-01-07T16:55:21+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.023111s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.005246s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.006706s ]
+[2020-01-07T16:55:21+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.025816s ]
+[2020-01-07T16:55:21+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387320 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.004387s ]
+[2020-01-07T16:55:21+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.018551s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001752s ]
+[2020-01-07T16:55:21+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.023187s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002346s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.002267s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.001790s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.003066s ]
+[2020-01-07T16:55:21+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.020867s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002697s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.002827s ]
+[2020-01-07T16:55:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.002190s ]
+[2020-01-07T16:55:21+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:55:23+08:00][sql] CONNECT:[ UseTime:2.015170s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:23+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.024009s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002286s ]
+[2020-01-07T16:55:23+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.021706s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004410s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003751s ]
+[2020-01-07T16:55:23+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.020901s ]
+[2020-01-07T16:55:23+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387322 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.004485s ]
+[2020-01-07T16:55:23+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.017643s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001735s ]
+[2020-01-07T16:55:23+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.018833s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002056s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.002372s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.001793s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.002637s ]
+[2020-01-07T16:55:23+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.016583s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002168s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.003003s ]
+[2020-01-07T16:55:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.001739s ]
+[2020-01-07T16:55:23+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:55:24+08:00][sql] CONNECT:[ UseTime:2.007747s ] mysql:host=localhost;port=3306;dbname=juduopin;charset=utf8
+[2020-01-07T16:55:24+08:00][sql] SHOW FULL COLUMNS FROM `db_system_admin` [ RunTime:0.025570s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT * FROM `db_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002292s ]
+[2020-01-07T16:55:24+08:00][sql] SHOW FULL COLUMNS FROM `db_system_menus` [ RunTime:0.019162s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `db_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.004324s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT `menu_name` FROM `db_system_menus` WHERE  `action` = 'index'  AND `controller` = 'store.StoreProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.003489s ]
+[2020-01-07T16:55:24+08:00][sql] SHOW FULL COLUMNS FROM `db_system_log` [ RunTime:0.019186s ]
+[2020-01-07T16:55:24+08:00][sql] INSERT INTO `db_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1578387323 , `admin_name` = 'admin' , `path` = 'admin/store.storeproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.003294s ]
+[2020-01-07T16:55:24+08:00][sql] SHOW FULL COLUMNS FROM `db_store_category` [ RunTime:0.016321s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT * FROM `db_store_category` ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001504s ]
+[2020-01-07T16:55:24+08:00][sql] SHOW FULL COLUMNS FROM `db_store_product` [ RunTime:0.019774s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 1 [ RunTime:0.002058s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0  AND `is_show` = 0 [ RunTime:0.002477s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 0 [ RunTime:0.002567s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND ( `pav`.`stock` = 0 OR `p`.`stock` = 0 ) [ RunTime:0.002944s ]
+[2020-01-07T16:55:24+08:00][sql] SHOW FULL COLUMNS FROM `db_system_config` [ RunTime:0.018984s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT * FROM `db_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.002465s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` `p` LEFT JOIN `db_store_product_attr_value` `pav` ON `p`.`id`=`pav`.`product_id` WHERE  `p`.`is_show` = 1  AND `p`.`is_del` = 0  AND `p`.`stock` <= '2' [ RunTime:0.002193s ]
+[2020-01-07T16:55:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `db_store_product` WHERE  `is_del` = 1 [ RunTime:0.001903s ]
+[2020-01-07T16:55:24+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\app\admin\view\store\store_product\index.php [ array (
+  0 => '_admin',
+  1 => 'cate',
+  2 => 'type',
+  3 => 'onsale',
+  4 => 'forsale',
+  5 => 'warehouse',
+  6 => 'outofstock',
+  7 => 'policeforce',
+  8 => 'recycle',
+) ]
+[2020-01-07T16:55:26+08:00][info] [ VIEW ] D:\phpStudy\WWW\crmeb\public\index.html [ array (
+) ]
